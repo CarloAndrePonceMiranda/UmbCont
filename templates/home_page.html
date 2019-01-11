@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block head_title %}| {{title}}{% endblock %}
+{%load static%}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="row separatedv">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 text-center text-light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% if user.is_authenticated %}<h2>Welcome back<br>{% firstof request.user.get_full_name request.user.get_username %}</h2>{% endif %}
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% include "footer.html" %}

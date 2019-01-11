@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+	{% load bootstrap4 %}
+	{% block content %}
+	{% url 'users' as users %}
+	{% block head_title %}| Editando a {{ object.username }}{% endblock %}
+	<section class="section">
+		<div class="container">
+			<div class="row separatedv">
+				<div class="col-md-3"></div>
+				<div class="col-lg-6 text-light">
+					<h2>Editar a {{ object.username }}</h2>
+					<form method="post" class="a">
+						{% csrf_token %}
+						{%bootstrap_form form%}
+							<input type="submit" value="Confirmar" class="btn btn-warning"/>
+						</form>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block head_title %}| Control{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-12 separado text-center">
+    <h2>Umbrellas</h2>
+  </div>
+</div>
+<div class="row">
+{% for pr in control %}
+    <div class="col-md-3" style="background-color:#333333;border:1px solid #555555 !important;padding:20px; hover:blue;">
+      <div class="text-center">
+        <h4 style="color:#a9aaaa;">{{pr.name}}</h4>
+        {% if pr.state == True  %}
+        <img class="img-responsive" style="padding:15px;" src="{% static 'img/Activate.png' %}" width="150px" height="150px">
+        <a href="http://{{pr.ip}}:1880/ui/#/0" style="text-decoration: none !important; color:white;" target="_blank">
+          <button type="button" class="btn btn-outline-success btn-lg btn-block">Control</button>
+        </a>
+        {% else %}
+        <img class="img-responsive" style="padding:15px;" src="{% static 'img/Deactivate.png' %}"width="150px" height="150px">
+        <button type="button" class="btn btn-outline-danger btn-lg btn-block" disabled>Control</button>
+        {% endif %}
+      </div>
+    </div><!-- /.col-lg-4 -->
+    {% endfor %}
+  </div><!-- /.row -->
+{% endblock %}

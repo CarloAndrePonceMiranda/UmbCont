@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block head_title %}| Registrate{% endblock %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="row separatedv">
+          <div class="col-lg-3">
+
+          </div>
+          <div class="col-lg-6 text-light">
+            <h1>Sign In</h1>
+            <form method="post">
+              {% csrf_token %}
+              {{ form }}
+              <br>
+              <a href="{%url 'password_reset' %}">Frogot Password</a>
+              <button type="submit" class="btn btn-lg btn-primary btn-block"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+            </form>
+          </div>
+          <div class="col-lg-3">
+
+          </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

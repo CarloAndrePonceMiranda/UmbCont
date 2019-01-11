@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block head_title %}| List{% endblock %}
+{% block content %}
+	<div class="container text-light">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1 align="center">Umbrellas List</h1><br>
+				<a href="{% url 'umbrellas:umbrella' %}" style="text-decoration:none">
+					<button type="button" class="btn btn-outline-info btn-lg" data-toggle="tooltip" data-placement="top" title="New Umbrella"><i class="fas fa-plus"></i></button>
+				</a><br><br><br><br>
+			</div>
+		</div>
+		<div class="row">
+			<table class="table table-hover">
+				<tr>
+					<thead>
+						<th class="text-center text-light">Name</th>
+						<th class="text-center text-light">IP address</th>
+						<th class="text-center text-light">State</th>
+						<th class="text-center text-light">Actions</th>
+					</thead>
+				</tr>
+				{% for clientes in playera %}
+				<tr>
+					<td class="text-center align-middle">{{ clientes.name }}</td>
+					<td class="text-center align-middle">{{ clientes.ip }}</td>
+					<td class="text-center align-middle">{% if clientes.state == True %}<strong class="text-success">Active</strong>{% else %}<strong class="text-danger"><i>Deactivate</i></strong>{% endif %}</td>
+					<td  class="text-center align-middle">
+						<div class="btn-group">
+							<!-- <a style="text-decoration:none" href="{% url "umbrellas:umbrelladetail" clientes.id %}">
+								<button type="submit" class="btn btn-outline-success btn-lg btn-block" data-toggle="tooltip" data-placement="bottom" title="Inspect Umbrella"><i class="far fa-eye"></i></button>
+							</a> -->
+							<a style="text-decoration:none" href="{% url 'umbrellas:edit' clientes.id %}">
+								<button type="button" class="btn btn-outline-warning btn-lg btn-block" data-toggle="tooltip" data-placement="bottom" title="Edit Umbrella"><i class="far fa-edit"></i></button>
+							</a>
+							<a style="text-decoration:none" href="{% url "umbrellas:delete" clientes.id %}">
+								<button type="submit" class="btn btn-outline-danger btn-lg btn-block" data-toggle="tooltip" data-placement="bottom" title="Drop Umbrella"><i class="fas fa-trash"></i></button>
+							</a>
+						</div>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div><!-- /.col-lg-4 -->
+		{% endblock %}

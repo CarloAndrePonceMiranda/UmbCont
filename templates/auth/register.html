@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% url 'users' as users %}
+{% block head_title %}| Registrate{% endblock %}
+{% block content %}
+{% url 'users' as users %}
+<section class="section text-light">
+  <div class="container">
+    <div class="row separatedv">
+          <div class="col-lg-3">
+
+          </div>
+          <div class="col-lg-6">
+            <div class="text-center">
+              <h1>New User</h1>
+            </div>
+            <form method="post">
+              {% csrf_token %}
+              {{form}}
+              <br><button type="submit" class="btn btn-lg btn-success btn-block"><i class="fas fa-user-check"></i></button>
+            </form>
+          </div>
+
+        <div class="col-lg-3">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

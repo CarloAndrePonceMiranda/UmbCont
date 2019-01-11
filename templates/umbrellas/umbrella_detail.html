@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+{% block head_title %}| Detail{% endblock %}
+{% block content %}
+<div class="row">
+	<div class="col-md-4">
+		<center>
+			<h4>Details</h4>
+			<br>
+			<h1>Name: {{ playera.name }}</h1>
+			<br>
+			<h2>IP Address: {{ playera.ip }}</h2>
+			<br>
+			<h3>State: {% if clientes.state == True %}<strong class="text-success">Active</strong>{% else %}<strong class="text-danger"><i>Deactivate</i></strong>{% endif %}</h3></center>
+			<br>
+			<!-- <a style="text-decoration:none" href="{% url 'umbrellas:edit' playera.id %}"><button type="button" class="btn btn-outline-warning btn-lg btn-block">Edit</button></a> -->
+		</center>
+	</div>
+	<div class="col-md-8">
+			<img src="{% static 'img/UMBRELLAS-STYLE_14499_image.jpg' %}"  class="img-responsive" width="100%" height="66%">
+	</div>
+</div>
+
+
+  {% endblock %}

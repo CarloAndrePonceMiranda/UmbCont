@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% load staticfiles %}
+{% block head_title %}| Edit{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-4">
+    <h1>Edit Umbrella</h1>
+    <form method="post">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <input type="submit" class="btn btn-outline-success btn-lg btn-block" value="Do it"/>
+    </form>
+  </div>
+  <div class="col-md-8">
+			<img src="{% static 'img/UMBRELLAS-STYLE_14499_image.jpg' %}"  class="img-responsive" width="100%" height="66%">
+	</div>
+</div>
+<style media="screen">
+  label{
+    color:#ffffff!important;
+  }
+</style>
+{% endblock %}

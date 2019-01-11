@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block content %}
+<main role="main" class="container">
+      <div class="jumbotron">
+        <h1 style="color:black;">Smart Umbrellas</h1>
+        <p class="lead" style="color:black;">This Page bring a complete information of all umbrellas as registred and content all link to control the openning and closing of the umbrellas</p>
+        <p class="lead" style="color:black;">If you are <strong><ins>Administrator</ins></strong> can track the registration of all operational umbrellas and control them.</p>
+        <p class="lead" style="color:black;">But if it's just part of the <strong><ins>Staff</ins></strong>, you can only control them.</p>
+      </div>
+    </main>
+{% endblock %}

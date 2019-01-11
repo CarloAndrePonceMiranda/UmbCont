@@ -1,0 +1,108 @@
+.bg-dark {
+    background-color: #838484 !important;
+    color:white !important;
+}
+a{
+  text-decoration: none !important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  color: white !important;
+}
+
+h4{
+  color: #a9aaaa !important;
+}
+
+body{
+  background-color: rgba(0,0,0,0.87)!important;
+}
+
+.jumbotron{
+  background-color: #838484!important;
+}
+
+.table{
+  border: 1px #000000 solid !important;
+  -webkit-box-shadow: 0px 0px 60px 10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 60px 10px rgba(0,0,0,1);
+  box-shadow: 0px 0px 60px 10px rgba(0,0,0,1);
+}
+.separado{
+  padding: 20px!important;
+}
+.btn-outline-info:hover{
+  border: 1px #17a2b8 solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(23,162,184,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(23,162,184,1);
+  box-shadow: 0px 0px 20px 10px rgba(23,162,184,1);
+}
+.btn-outline-success:hover{
+  border: 1px #28a745 solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(40, 167, 69,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(40, 167, 69,1);
+  box-shadow: 0px 0px 20px 10px rgba(40, 167, 69,1);
+}
+.btn-success:hover{
+  border: 1px #28a745 solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(40, 167, 69,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(40, 167, 69,1);
+  box-shadow: 0px 0px 20px 10px rgba(40, 167, 69,1);
+}
+.btn-outline-danger:hover{
+  border: 1px #dc3545 solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(221, 53, 69,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(221, 53, 69,1);
+  box-shadow: 0px 0px 20px 10px rgba(221, 53, 69,1);
+}
+.btn-danger:hover{
+  border: 1px #dc3545 solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(221, 53, 69,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(221, 53, 69,1);
+  box-shadow: 0px 0px 20px 10px rgba(221, 53, 69,1);
+}
+.btn-outline-warning:hover{
+  border: 1px #ffc107 solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(255,193,6,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(255,193,6,1);
+  box-shadow: 0px 0px 20px 10px rgba(255,193,6,1);
+}
+.btn-warning:hover{
+  border: 1px #ffc107 solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(255,193,6,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(255,193,6,1);
+  box-shadow: 0px 0px 20px 10px rgba(255,193,6,1);
+}
+.btn-outline-primary:hover{
+  border: 1px #007bea solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 123, 235,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(0, 123, 235,1);
+  box-shadow: 0px 0px 20px 10px rgba(0, 123, 235,1);
+}
+.btn-primary:hover{
+  border: 1px #007bea solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 123, 235,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(0, 123, 235,1);
+  box-shadow: 0px 0px 20px 10px rgba(0, 123, 235,1);
+}
+.btn-dark:hover{
+  border: 1px #000000 solid !important;#000000
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 1);
+}
+.btn-light:hover{
+  border: 1px #ffffff solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255,1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255,1);
+  box-shadow: 0px 0px 20px 10px rgba(255, 255, 255,1);
+}
+.btn-secondary:hover{
+  border: 1px #868e96 solid !important;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(135, 143, 150, 1);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(135, 143, 150, 1);
+  box-shadow: 0px 0px 20px 10px rgba(135, 143, 150, 1);
+}
+a{
+  text-decoration: none
+}
