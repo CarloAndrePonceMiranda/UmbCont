@@ -1,1 +1,1 @@
-web: gunicorn UmbCon.wsgi --log-file -
+web: gunicorn umbcon.wsgi --log-file -
