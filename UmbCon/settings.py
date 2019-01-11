@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -89,10 +90,10 @@ WSGI_APPLICATION = 'UmbCon.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'uapp',
-        'USER': 'postgres',
-        'PASSWORD': '211193',
-        'HOST': '127.0.0.1',
+        'NAME': 'dbl8vug3oir7pl',
+        'USER': 'zedfwypajwoodu',
+        'PASSWORD': '37bbfde3a835b62e67972b34601ad97f5de18f617a518124251b00d4478e7257',
+        'HOST': 'ec2-54-235-77-0.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -154,3 +155,6 @@ EMIAIL_PORT = 25
 EMAIL_HOST_USER = 'chinacles.p@gmail.com'
 EMAIL_HOST_PASSWORD = 'Chinacles1'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
